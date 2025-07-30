@@ -1,12 +1,12 @@
-a=input('enter no : ')
-b=input('enter no : ')
+a=input('Enter name : ')
+b=input('Enter name : ')
 a1=list(a)
 b1=list(b)
 for i in a:
     for j in b:
-        if i==j:
+        if i==j and i in a1 and i in b1:
             a1.remove(i)
-            b1.remove(j)
+            b1.remove(i)
             break
 count=len(a1)+len(b1)
 q=[]
