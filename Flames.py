@@ -27,7 +27,7 @@ while len(a)!=1:
     elif count==len(a):
         f=len(a)
     elif count<len(a):
-        f=len(a)-count
+        f=count-len(a)
     q=a[f:]
     if len(q)==len(a):
         q=[]
